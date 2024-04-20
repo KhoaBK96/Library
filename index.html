@@ -9,24 +9,26 @@
 <body>
     <div class="header">
         <h1 class="logo">Library</h1>
-        <button class="login">Log in</button>
+        <button class="btn">Log in</button>
     </div>
     <div class="main">
-        <button class="addBookBtn">+ Add book</button>
+        <button class="btn addBook">+ Add book</button>
         <div class="book-grid">
         </div>
     </div>
-   <div class="footer"> Copyright © 2024 michalosman </div>
+   <div class="footer"> Copyright © 2024 KT </div>
     <dialog close class="bookDialog">
         <h3>Add new book</h3>
         <form method="dialog">
             <input type="text" placeholder="Title" id="title" >
             <input type="text" placeholder="Author" id="author" >
             <input type="number" placeholder="Pages" id="pages" >
-            <label for="read">Have you read it?</label>
-            <input type="checkbox" id="read" name="read" value="read" />
-            <button value="cancel" formmethod="dialog" id="cancel">Cancel</button>
-            <button id="confirmBtn" value="default">Submit</button>
+            <div class="isRead">
+                <label for="read">Have you read it?</label>
+                <input type="checkbox" id="read" name="read" value="read" />
+            </div>
+            <button value="cancel" formmethod="dialog" id="cancel" class="btn">Cancel</button>
+            <button id="confirmBtn" value="default" class="btn">Submit</button>
         </form>
     </dialog>
 </body>
